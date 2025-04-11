@@ -186,7 +186,7 @@ export default function Home() {
             className="text-xl text-gray-600 mb-10 leading-relaxed"
           >
             Accept support for your work.<br/>
-            It's easier than you think.
+            It&apos;s easier than you think.
           </motion.h2>
           
           <motion.button
@@ -346,7 +346,7 @@ export default function Home() {
                   <FontAwesomeIcon icon={testimonial.icon} className="h-5 text-pink-500"/>
                 </div>
                 <blockquote className="text-lg italic text-gray-700 mb-6 leading-relaxed">
-                  "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
                 </blockquote>
                 <div className="font-medium text-gray-900">{testimonial.author}</div>
               </motion.div>
@@ -379,7 +379,7 @@ export default function Home() {
           onClick={handleAuthAction}
           className="inline-block bg-gradient-to-r from-yellow-300 to-yellow-400 hover:from-yellow-400 hover:to-yellow-500 px-10 py-5 font-bold rounded-full text-lg transition-all duration-200 shadow-lg hover:shadow-xl relative overflow-hidden group"
         >
-          <span className="relative z-10">Create your page — it's free</span>
+          <span className="relative z-10">Create your page — it&apos;s free</span>
           <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
         </motion.button>
         

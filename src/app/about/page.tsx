@@ -8,7 +8,7 @@ const AboutPage = () => {
         <h1 className="text-4xl font-bold text-gray-900 mb-6">About Buy Me a Tea ☕</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Buy Me a Tea makes supporting fun and easy. In just a couple of taps, your fans can make the payment 
-          (buy you a tea) and leave a message. They don't even have to create an account!
+          (buy you a tea) and leave a message. They don&apos;t even have to create an account!
         </p>
       </section>
 
@@ -61,7 +61,7 @@ const AboutPage = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">Messages</h3>
             <p className="text-gray-600">
-              Your supporters can leave a message with their payment, so you know who it's from.
+              Your supporters can leave a message with their payment, so you know who it&apos;s from.
             </p>
           </div>
         </div>

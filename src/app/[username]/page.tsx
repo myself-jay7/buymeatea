@@ -24,7 +24,7 @@ export default async function SingleProfilePage({params}:Props) {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center p-4">
           <h1 className="text-2xl font-bold">404 - Profile not found</h1>
-          <p className="mt-2">The requested profile doesn't exist</p>
+          <p className="mt-2">The requested profile doesn&apos;t exist</p>
         </div>
       </div>
     );
