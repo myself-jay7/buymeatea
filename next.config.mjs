@@ -9,7 +9,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "res.cloudinary.com", // ✅ Added Cloudinary support
+        hostname: "res.cloudinary.com",
       },
     ],
   },

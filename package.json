@@ -17,6 +17,7 @@
     "@types/md5": "^2.3.5",
     "@types/parse-full-name": "^1.2.5",
     "@types/uniqid": "^5.3.4",
+    "@vercel/analytics": "^1.5.0",
     "axios": "^1.6.8",
     "cloudinary": "^2.6.0",
     "framer-motion": "^12.6.3",
