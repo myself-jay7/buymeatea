@@ -21,7 +21,6 @@ export default function ContactPage() {
         </p>
       </div>
 
-      {/* Contact Cards Grid */}
       <div className="grid md:grid-cols-3 gap-8 mb-16">
         {/* Email Card */}
         <div className="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-lg transition-shadow duration-300">
@@ -93,7 +92,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Contact Form (Visual Only) */}
       <div className="bg-white rounded-xl shadow-md p-8 max-w-2xl mx-auto mb-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Contact Form</h2>
         <div className="space-y-4">

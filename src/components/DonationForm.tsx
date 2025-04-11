@@ -35,7 +35,6 @@ export default function DonationForm({email}:{email:string}) {
 
   return (
     <form action={handleFormSubmit} className="max-w-md mx-auto">
-      {/* Coffee Amount Selection - Now perfectly aligned */}
       <div className="border border-yellow-300 bg-yellow-300/10 rounded-xl p-3 sm:p-4">
         <div className="flex items-center gap-2 mb-2">
           <FontAwesomeIcon icon={faCoffee} className="text-lg min-w-[16px]" />
@@ -67,7 +66,6 @@ export default function DonationForm({email}:{email:string}) {
         </div>
       </div>
 
-      {/* Name Input - Better aligned */}
       <div className="mt-4">
         <input 
           name="name" 
@@ -78,7 +76,6 @@ export default function DonationForm({email}:{email:string}) {
         />
       </div>
 
-      {/* Message Textarea */}
       <div className="mt-4">
         <textarea 
           name="message" 
@@ -87,7 +84,6 @@ export default function DonationForm({email}:{email:string}) {
         ></textarea>
       </div>
 
-      {/* Crypto Selection */}
       <div className="mt-4">
         <h3 className="text-xs text-gray-500 mb-2">Pay with selected crypto or with cc</h3>
         <div className="grid grid-cols-3 gap-2">
@@ -112,7 +108,6 @@ export default function DonationForm({email}:{email:string}) {
         </div>
       </div>
 
-      {/* Submit Button */}
       <div className="mt-6">
         <button 
           type="submit"

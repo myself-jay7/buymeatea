@@ -31,7 +31,6 @@ const FAQPage = () => {
   ];
 
   const faqData: FAQItem[] = [
-    // For Creators (7 questions)
     {
       id: 1,
       question: 'How do I set up my creator page?',
@@ -98,7 +97,7 @@ const FAQPage = () => {
       icon: <FiGift className="text-teal-500" size={20} />
     },
   
-    // For Supporters (7 questions)
+    // For Supporters 
     {
       id: 8,
       question: 'Do I need an account to donate?',
@@ -166,7 +165,6 @@ const FAQPage = () => {
 
   return (
     <div className="relative max-w-6xl mx-auto px-4 py-12 overflow-hidden">
-      {/* Decorative grid background using arbitrary Tailwind values */}
       <div 
         className="absolute inset-0 -z-10 overflow-hidden"
         style={{
@@ -192,7 +190,6 @@ const FAQPage = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-transparent to-blue-50 opacity-20"></div>
       </div>
 
-      {/* Header with decorative elements */}
       <div className="text-center mb-16 relative">
         <div className="absolute -top-8 -left-8 w-24 h-24 bg-blue-100 rounded-full opacity-30 blur-xl"></div>
         <div className="absolute -bottom-8 -right-8 w-28 h-28 bg-yellow-100 rounded-full opacity-30 blur-xl"></div>
@@ -230,7 +227,6 @@ const FAQPage = () => {
         </div>
       </div>
 
-      {/* FAQ Items with enhanced styling */}
       <div className="relative z-10 space-y-5 max-w-4xl mx-auto">
         {filteredFaqs.map((item) => (
           <div 
@@ -273,7 +269,6 @@ const FAQPage = () => {
         ))}
       </div>
 
-      {/* Enhanced CTA Section */}
       <div 
         className="mt-20 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-10 text-center relative overflow-hidden border border-gray-200 shadow-inner"
         style={{
@@ -305,7 +300,6 @@ const FAQPage = () => {
         </div>
       </div>
 
-      {/* Inline styles for animations */}
       <style jsx>{`
         @keyframes float {
           0%, 100% {

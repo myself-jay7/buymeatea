@@ -21,16 +21,13 @@ export default function Home() {
     }
   };
 
-  // Background decorative elements data
   const bgElements = [
-    // Left side cluster
     { icon: faMugHot, color: "text-amber-400", size: "text-4xl", pos: "top-[15%] left-[15%]" },
     { icon: faBitcoin, color: "text-yellow-400", size: "text-3xl", pos: "top-[25%] left-[20%]" },
     { icon: faCoffee, color: "text-amber-300", size: "text-5xl", pos: "bottom-[35%] left-[18%]" },
     { icon: faGem, color: "text-blue-400", size: "text-4xl", pos: "bottom-[25%] left-[12%]" },
     { icon: faHeart, color: "text-pink-400", size: "text-3xl", pos: "top-[35%] left-[10%]" },
     
-    // Right side cluster
     { icon: faMoneyBillWave, color: "text-green-400", size: "text-5xl", pos: "top-[20%] right-[15%]" },
     { icon: faDollarSign, color: "text-green-300", size: "text-3xl", pos: "top-[60%] right-[20%]" },
     { icon: faMugHot, color: "text-amber-400", size: "text-4xl", pos: "bottom-[45%] right-[18%]" },
@@ -51,7 +48,6 @@ export default function Home() {
         <meta name="description" content="Accept support for your creative work. It's easier than you think." />
       </Head>
 
-{/* Balanced Animated Background Elements */}
 <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
   <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
@@ -108,7 +104,6 @@ export default function Home() {
     </motion.div>
   ))}
 
-  {/* Feature elements with more pronounced movement */}
   <motion.div
     className="absolute top-[30%] left-[25%] text-6xl text-amber-500 opacity-60"
     animate={{
@@ -169,20 +164,20 @@ export default function Home() {
             </p>
             <p className="mt-3 text-lg">Loved by 100,000+ creators</p>
           </div>
-<div className="relative inline-block">
-  <motion.h1 
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, delay: 0.2 }}
-    className="text-5xl md:text-6xl font-bold mt-8 mb-6 leading-tight bg-gradient-to-r from-yellow-500 to-blue-500 bg-clip-text text-transparent"
-  >
-    Fund your<br/>
-    creative work
-  </motion.h1>
+          <div className="relative inline-block">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-5xl md:text-6xl font-bold mt-8 mb-6 leading-tight bg-gradient-to-r from-yellow-500 to-blue-500 bg-clip-text text-transparent"
+            >
+              Fund your<br/>
+              creative work
+            </motion.h1>
 
-  {/* Underline effect */}
-  <span className="absolute bottom-2 left-0 w-full h-2 bg-yellow-300 opacity-50 -z-10 rounded-lg"></span>
-</div>
+            {/* Underline effect */}
+            <span className="absolute bottom-2 left-0 w-full h-2 bg-yellow-300 opacity-50 -z-10 rounded-lg"></span>
+          </div>
 
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -203,7 +198,7 @@ export default function Home() {
             onClick={handleAuthAction}
             className="inline-block bg-gradient-to-r from-yellow-300 to-yellow-400 hover:from-yellow-400 hover:to-yellow-500 px-10 py-5 font-bold rounded-full text-lg transition-all duration-200 shadow-lg hover:shadow-xl relative overflow-hidden group"
           >
-            <span className="relative z-10">Start my page</span>
+            {status==="authenticated" ?<span className="relative z-10">Open my page</span>:<span className="relative z-10">Start my page</span>}
             <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
           </motion.button>
         </motion.div>

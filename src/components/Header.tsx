@@ -18,13 +18,11 @@ export default function Header({ session }: { session: Session | null }) {
       <meta name="cryptomus" content="6e56e941" />
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-24">
-          {/* Logo */}
           <Link href={'/'} className="inline-flex gap-1 items-center">
             <FontAwesomeIcon className="h-8" icon={faMugHot}/>
             <span className="mt-2">Buy me a Tea</span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors text-lg">
               About
@@ -36,7 +34,6 @@ export default function Header({ session }: { session: Session | null }) {
               Contact
             </Link>
 
-            {/* Auth Buttons */}
             <div className="flex items-center space-x-4 ml-4">
               {session ? (
                 <Link
@@ -71,7 +68,6 @@ export default function Header({ session }: { session: Session | null }) {
             </div>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button 
             className="md:hidden p-3 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

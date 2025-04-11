@@ -36,7 +36,6 @@ export default async function SingleProfilePage({params}:Props) {
     <div className="min-h-screen bg-gray-50">
       <DonationStatus />
       
-      {/* Cover Image - Full width */}
       <div className="w-full h-48 md:h-64">
         <Image
           src={profileInfoDoc.coverUrl}
@@ -50,9 +49,7 @@ export default async function SingleProfilePage({params}:Props) {
       
       {/* Main Content Container */}
       <div className="max-w-6xl px-4 mx-auto relative -mt-16 md:-mt-20">
-        {/* Profile Header - Responsive layout */}
         <div className="flex flex-col sm:flex-row items-start sm:items-end gap-3 md:gap-6">
-          {/* Avatar - Responsive sizing */}
           <div className="size-24 sm:size-32 md:size-36 overflow-hidden rounded-xl border-2 border-white shadow-md">
             <Image
               src={profileInfoDoc.avatarUrl}
@@ -64,7 +61,6 @@ export default async function SingleProfilePage({params}:Props) {
             />
           </div>
           
-          {/* Profile Info - Stacked on mobile, aligned on desktop */}
           <div className="mb-1 sm:mb-3">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
               {profileInfoDoc.displayName}
@@ -77,7 +73,6 @@ export default async function SingleProfilePage({params}:Props) {
           </div>
         </div>
 
-        {/* Two-column grid - Stacked on mobile */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mt-4 md:mt-8">
           {/* About Section */}
           <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm">
@@ -115,7 +110,6 @@ export default async function SingleProfilePage({params}:Props) {
             )}
           </div>
           
-          {/* Donation Form - Sticky on larger screens */}
           <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm sticky top-4">
             <DonationForm email={profileInfoDoc.email} />
           </div>

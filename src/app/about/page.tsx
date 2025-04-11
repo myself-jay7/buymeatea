@@ -12,7 +12,6 @@ const AboutPage = () => {
         </p>
       </section>
 
-      {/* Video Section */}
       <section className="my-12 bg-gray-100 rounded-lg overflow-hidden">
         <div className="aspect-w-16 aspect-h-9">
           <iframe 
@@ -26,12 +25,10 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="my-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Why creators love us</h2>
         
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Feature 1 */}
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <div className="text-blue-500 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,7 +41,6 @@ const AboutPage = () => {
             </p>
           </div>
           
-          {/* Feature 2 */}
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <div className="text-blue-500 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,7 +53,6 @@ const AboutPage = () => {
             </p>
           </div>
           
-          {/* Feature 3 */}
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <div className="text-blue-500 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -72,7 +67,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="my-16 bg-blue-50 rounded-lg p-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">By the numbers</h2>
         
@@ -92,7 +86,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="my-16 text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to get started?</h2>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -103,7 +96,6 @@ const AboutPage = () => {
         </button>
       </section>
 
-      {/* Footer Note */}
       <div className="text-center text-gray-500 text-sm mt-16">
         <p>Made with ❤️ for creators everywhere</p>
       </div>
