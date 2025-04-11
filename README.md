@@ -2,7 +2,7 @@
 
 BuyMeaTea is a web platform where content creators can receive cryptocurrency donations from supporters, inspired by BuyMeACoffee. Built with Next.js, Tailwind CSS, and MongoDB, it supports Google OAuth authentication via NextAuth.js, image uploads with Cloudinary, and crypto payments via NowPayments.
 
- **Live Demo**: [https://buymeatea.vercel.app](https://buymeatea.vercel.app)
+**Live Demo**: [https://buymeatea.vercel.app](https://buymeatea.vercel.app)
 
 ---
 
@@ -30,6 +30,7 @@ BuyMeaTea is a web platform where content creators can receive cryptocurrency do
 ---
 
 ## Project Structure
+
 ```
 src/
 ├── components/      # Reusable UI components
@@ -44,7 +45,7 @@ src/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -92,7 +93,8 @@ NOWPAYMENTS_API_KEY=your_nowpayments_api_key
 
 ```bash
 pnpm dev
-
+# or
+npm run dev
 ```
 
 Visit [http://localhost:3000](http://localhost:3000) in your browser.
@@ -115,31 +117,30 @@ Vercel handles:
 
 ---
 
-##  Developer Notes
+## Developer Notes
 
 - **MongoDB**: Ensure Atlas allows Vercel’s IP range or set to `0.0.0.0/0` (for dev only).
 - **Cloudinary**: Uploads are secured via signed backend API calls.
 - **NowPayments**: Crypto transactions use their REST API.
 - **OAuth**: Test locally with `http://localhost:3000` before deploying.
 - **Debugging**: Check Vercel logs for serverless function errors.
-```
----
-
-##  Screenshots
-
 
 ---
-```
-##  Credits
+
+## Screenshots
+
+
+---
+
+## Credits
 
 Built by [@myself-jay7](https://github.com/myself-jay7)  
-Inspired by BuyMeACoffee, reimagined for crypto creators ☕💸
+Inspired by BuyMeACoffee, reimagined for crypto creators ☕
 
 ---
 
-##  License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
-
 
 ---
