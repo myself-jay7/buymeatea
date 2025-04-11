@@ -30,7 +30,7 @@ BuyMeaTea is a web platform where content creators can receive cryptocurrency do
 ---
 
 ## Project Structure
-
+```
 src/
 ├── components/      # Reusable UI components
 ├── actions/         # Backend logic helpers (e.g., database calls)
@@ -40,7 +40,7 @@ src/
 │   └── ...          # Frontend pages
 ├── styles/          # Global CSS and Tailwind config
 └── utils/           # Database connection, helpers
-
+```
 
 ---
 
