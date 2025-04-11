@@ -1,10 +1,8 @@
 import Header from "@/components/Header";
-import {authOptions} from "@/lib/authOptions";
-import type { Metadata } from "next";
-import {getServerSession} from "next-auth";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import {Toaster} from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import { Providers } from './providers';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -15,20 +13,19 @@ export const metadata: Metadata = {
   description: "Empowering creators through meaningful support.",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  const session = await getServerSession(authOptions);
+}) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Toaster />
-        <Analytics />
-        <Header session={session} />
         <Providers>
+          <Toaster />
+          <Header />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>

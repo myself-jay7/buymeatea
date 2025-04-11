@@ -1,14 +1,14 @@
 'use client';
 import { faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Session } from "next-auth";
-import { signIn } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { parseFullName } from "parse-full-name";
 import { useState } from "react";
 
-export default function Header({ session }: { session: Session | null }) {
+export default function Header() {
+  const { data: session } = useSession();
   const name = session?.user?.name || '';
   const { first: firstName } = parseFullName(name);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
