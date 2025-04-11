@@ -39,7 +39,7 @@ export async function createDonation(formData: FormData): Promise<string|false> 
     success_url: `${process.env.NEXTAUTH_URL}/${profileInfoDoc.username}?donation_success=1`,
     cancel_url: `${process.env.NEXTAUTH_URL}/${profileInfoDoc.username}?donation_canceled=1`,
     is_fixed_rate: true,       // Lock the exchange rate
-    is_fee_paid_by_user: true  // User pays the transaction fees
+    is_fee_paid_by_user: false  // User pays the transaction fees
   };
 
   try {
