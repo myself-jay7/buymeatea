@@ -38,7 +38,7 @@ export default async function SingleProfilePage({params}:Props) {
       
       <div className="w-full h-48 md:h-64">
         <Image
-          src={profileInfoDoc.coverUrl}
+          src={profileInfoDoc.coverUrl || 'https://res.cloudinary.com/deellz8mv/image/upload/v1743098674/c437dc65-3916-4361-a7f6-46b7e64cd8e5_kpqlv6.jpg'}
           width={2048}
           height={2048}
           alt="cover image"

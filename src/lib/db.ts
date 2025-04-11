@@ -2,7 +2,6 @@ let globalWithMongo = global as typeof globalThis & {
   _mongoClientPromise: Promise<MongoClient>
 }
 
-// This approach is taken from https://github.com/vercel/next.js/tree/canary/examples/with-mongodb
 import { MongoClient } from "mongodb"
 
 if (!process.env.MONGODB_URI) {
