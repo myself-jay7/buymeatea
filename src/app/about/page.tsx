@@ -15,12 +15,12 @@ const AboutPage = () => {
       <section className="my-12 bg-gray-100 rounded-lg overflow-hidden">
         <div className="aspect-w-16 aspect-h-9">
           <iframe 
-            className="w-full h-96"
-            src="https://www.youtube.com/embed/7WwIgs4q35c"
-            title="Buy Me a Tea - How it works"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen>
+          className="w-full h-96"
+          src="https://www.youtube.com/embed/CiFoHm7HD94?autoplay=1&mute=1&loop=1&playlist=CiFoHm7HD94&controls=0"
+          title="Buy Me a Tea - How it works"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen>
           </iframe>
         </div>
       </section>
